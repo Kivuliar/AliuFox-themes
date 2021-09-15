@@ -46,40 +46,46 @@ The string for the font URL. The string is located in the "fonts" section in the
 ```
 When done correctly it should look like this in the json
 ![image](https://user-images.githubusercontent.com/84905506/132266358-3d8e34da-622d-49d9-b74a-d7dd1d413ee6.png)
-<h1 align="center">Brand/Accent Colors</h1>
+<h1 align="center">Simple colors</h1>
 
-* Accent colors
+string | behaviour
+------------ | -------------
+accent | "new messages since" text,<br/> send button, <br/>nitro "subscribe today", <br/>All toggles (position - ON), <br/>chat font scaling bar, <br/>DMs icon (top left), <br/>bot icon, <br/>upload emoji button, <br/>Role permissions (tick), <br/>join voice/video in server, <br/>phone number sent in chat, <br/>multiple buttons in settings (also "settings" in plugin list)
+input_background | Server => overview => server name, <br/>editing role name, <br/>search (in server, dms, global via magnifier icon on the bottom), <br/>channel name and topic in server settings (edit channel), <br/>user notes background
+mention_highlight | Highlights message that pinged you
+statusbar | Top bar of the screen (above channel name) but only when you are in channel, dms, settings, friend list, stages
+background | chat background, <br/>user list background, <br/>folders bg color, <br/>any bg you can think of, 
+background_secondary | Top bar above channel name, <br/>search in DMs, servers, global
 
-| String          | Purpose                 |
-| ---------------- |:-----------------------:|
-| brand up to 900 | old brand colors, are not used anymore, so they are useless |
-| brand_new up to 900 | new brand colors |
-| brand_new | accent color |
-| brand_new_360 | changes the cursor when typing color, bare in mind this WILL change the nitro text color in the settings, the turned on switch(best seen in plugins page) and probably more |
-| brand_new 230 to 630 | accent colors for buttons, bot tags, on/off sliders blah blah |
-| brand_new_560 | change the reaction clicked border |
-| link | literally just link color |
+<h1 alight="center">Colors</h1>
 
-<h1 align="center">Primary dark Colors</h1>
+* Brand
+
+string | behaviour
+------------ | -------------
+brand_new_530 | Ping color (@user changes color only), <br/>channel ping (ex. #general)
+brand_new_560 | emoji reaction border
+link | Link color
 
 * Primary dark colors, used for the big things chat bg, server list, member list, etc for dark mode
 
-| String          | Purpose                 |
-| ---------------- |:-----------------------:|
-| primary_dark_100 | changes chat scroll bar |
-| primary_dark_300 | in the plugin: changes icons color for attachments and emotes icon, DMs button, discord navagation button colors, top bar icons, member list icons (only changes the search icon and settings icon in member list), changes the text under the icons(search, pins, etc) for member list, changes the text for the names of roles in member list, changes server name color in the emotes list and icons for default emotes. |
-| primary_dark_360 | only in plugin: changes the read channel names and the icon next to them, also changes peoples names in the DM list [example](https://cdn.discordapp.com/attachments/590317150959566849/884594678832455770/Screenshot_20210907-022053.jpg) |
-| primary_dark_600 | main chat bg and also somehow changes the member list bg |
-| primary_dark_630 | channel list |
-| primary_dark_200 | changes text color for main text |
-| primary_dark_400 | "Message #..." color, timestamps, user statuses, UserDetails texts, TextInput placeholders (chat, searchbars), Guild/Category name in search tab, new day divider lines in chat |
-| primary_dark_660 | color for the chat bar where you write your messages, also changes the icon bg for gifts and attachment |  
-| primary_dark_800 | color for the bottom bar in the channel list, where the icons for friends, search, mentions, etc is |
-| primary_dark_700 | server list |
+string | behaviour
+------------ | -------------
+primary_dark_200 | Color for main text, <br/>text in embeds, <br/>server "mark as read", create channel, create category, change nickname, copy ID, <br/>channel list in server settings, <br/>member names + roles in member list, <br/>text in server settings => roles, <br/>"role color" text in role settings, <br/>most of the text in server invites, <br/>ban reason, <br/>text when about to kick/ban someone, <br/>friend list => names, <br/>users in "stage discovery", <br/>my account => user settings => phone number under sms auth, <br/>user settings => blocked users => "you don't have blocked users" text, <br/>perms in authorized apps, <br/>user settings => connections => spotify text about status broadcasting, <br/>user settings => appearance => *Aa* > **Aa**, <br/>attachment file names (when going to send one), <br/>most text in plugin related options
+primary_dark_300 | DMs (top left) icon, <br/>new group chat, <br/>discord icon (bottom left), <br/>friends, <br/>magnifier/search, <br/>stages, <br/>"sync your contacts" in friend list + add friend, <br/>search => last channel + suggestions + "where would you like to go?" + in mentions => filter icon, <br/>in stages - name and icon how many participants, <br/>all icons in user settings + "user settings" text, <br/>a lot of text in every setting, <br/>ticks (position OFF), <br/>attachments and emojis button, <br/>threads + "stay focused on a conversation" text when no active threads + '+' sign, <br/>search, <br/>invite members, <br/>settings icons, <br/>role names in member list (on the right panel), <br/>icons for default emojis, <br/>text under boosts, <br/>notifs, <br/>invite in server "profile", <br/>a lot of text (and icons!) in server settings, <br/>text under icons in profiles
+primary_dark_360 | channel names/user names on DM list (not muted, not active/selected)
+primary_dark_400 | status text in server/dm list/friend list, <br/>"today at" by the message, <br/>"message #channel/@user" on the bottom, <br/>"find perfect emoji" in emojis, <br/>search gifs/stickers, <br/>"find or start a conversation" top left, <br/>"tap to add note" in profiles, <br/>server "profile" - online/all members, <br/>"allow direct messages from server members", <br/>dot beside "XX EMOJIS [DOT HERE] Use anywhere with nitro", <br/>server overview > server name text, <br/>audit log - date, <br/>global search - search/mentions + usernames + statuses + server names + categories, 
+primary_dark_600 | Main chat background, <br/> server folders background, <br/> member list background, <br/> bg in settings, <br/> bg in friend list, <br/> bg in search (global, server, dm), <br/> buttons in server "profile" (create channel, category, change nickname, direct messages, hide muted channels, copy ID and background for emojis there), <br/> every bg in server settings, "trust this domain" window, except the lower part of it with buttons, <br/>POTENTIALLY background for spoilered messages
+primary_dark_630 | bf for channel/dm list, <br/>chat icon bg (top left), <br/> top bar (where the channel name is), <br/> channel name (panel on the right side) with its desc and icons, <br/> embed background, <br/> background in user profile (under edit profile button / call or video icon), <br/> top bar in mutual servers/friends, <br/> search > mentions - "all servers" bar, search - background above "last channel" (under search/mentions top bar), <br/> top bar in friend list, "find your friends" button and call/message icon by each friend, <br/> stages > every stage has background now, <br/> user settings - top bar and your profile is colored now (except your customizable bg), <br/>every top bar in settings, <br/> connections > display on profile bg, <br/> authorized apps backgrounds
+primary_dark_660 | attachment icon background, <br/>input area (where you type messages) background, <br/>when in settings - bar where your phone shows notif icons is colored, <br/> settings > connections - every connection is colored (top part of every connection), <br/> global search - both notif area and search/mentions tabs
+primary_dark_700 | Phone's notifications bar, <br/>server list bg, <br/>"find or start a conversation" bg, <br/>things that are "out of view" (example, when looking at member list - look left and right), <br/>"find the perfect emoji" bg, same with gifs and stickers, <br/>bg in "server profile", <br/>server settings > enable community > those examples on top are having colored backgrounds (pokemon go, sneakers fans, learn latin, hogwarts school), <br/>server settings > roles - search bar bg, every role's bg, <br/>"scroll down" button (that appears bottom right), <br/>press and hold on a msg > emoji button bg, <br/>user profile (under custom bg, above about me section), <br/>
+primary_dark_800 | Bottom bar (where friends, search, stages and your profile is) + space under it (android controls located there) - only when in dm list/channel list/friend list/stages/user settings (when in search - only android controls bar is changed), <br/>click and hold on a server - yup! that has a color now! (notifications/more options are there)
+primary_dark_900 | Border color of authorized apps, <br/>after opening an attachment(image) - bg there changes (except for "view embed" bar), <br/>
 
-<h1 alight="center">Primary strings</h1>
+vvvvvvvvvvvvvvv to do vvvvvvvvvvvvvvv
 
 * Primary strings used for both dark and light mode, used for smaller things
+
 
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
