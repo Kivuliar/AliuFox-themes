@@ -89,7 +89,7 @@ primary_dark_900 | Border color of authorized apps, <br/>after opening an attach
 | ---------------- |:-----------------------:|
 primary_100 | server > role settings (and role name) text (top bar)
 primary_300 | server > member list > in the search bar (right side) some roles will change color, possibly ones with default grayish color, also in role list (example @everyone)
-primary_700 | top bar (above channel name - but not when in search), <br/>spoilers, <br/>embed, <br/>DMs button, <br/>User status (online, idle, dnd, invis) background (in dm list only, not selected dm), <br/> (if using view permissions plugin - those will have background changed too) 
+primary_700 | top bar (above channel name - but not when in search), <br/>spoilers, <br/>embed, <br/>DMs button, <br/>User status (online, idle, dnd, invis) background (in dm list only, not selected dm), <br/>notification (in app), <br/>(if using view permissions plugin - those will have background changed too) 
 
 vvvvvvvvvvvvvvv to do vvvvvvvvvvvvvvv
 <h1 align="center">uikit Strings</h1>
