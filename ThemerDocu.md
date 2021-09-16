@@ -57,7 +57,7 @@ statusbar | Top bar of the screen (above channel name) but only when you are in 
 background | chat background, <br/>user list background, <br/>folders bg color, <br/>any bg you can think of, 
 background_secondary | Top bar above channel name, <br/>search in DMs, servers, global
 
-<h1 alight="center">Colors</h1>
+<h1 align="center">Colors</h1>
 
 * Brand
 
@@ -82,17 +82,16 @@ primary_dark_700 | Phone's notifications bar, <br/>server list bg, <br/>"find or
 primary_dark_800 | Bottom bar (where friends, search, stages and your profile is) + space under it (android controls located there) - only when in dm list/channel list/friend list/stages/user settings (when in search - only android controls bar is changed), <br/>click and hold on a server - yup! that has a color now! (notifications/more options are there)
 primary_dark_900 | Border color of authorized apps, <br/>after opening an attachment(image) - bg there changes (except for "view embed" bar), <br/>
 
-vvvvvvvvvvvvvvv to do vvvvvvvvvvvvvvv
-
 * Primary strings used for both dark and light mode, used for smaller things
 
 
 | String          | Purpose                 |
 | ---------------- |:-----------------------:|
-| primary_600 | server folders and something else I have no idea xdddd |
-| primary_700 | spoilers,embeds,top bar, DMs Button, bg for pings and server streaming icons (in plugin only changes the DMs button and also top bar) |
+primary_100 | server > role settings (and role name) text (top bar)
+primary_300 | server > member list > in the search bar (right side) some roles will change color, possibly ones with default grayish color, also in role list (example @everyone)
+primary_700 | top bar (above channel name - but not when in search), <br/>spoilers, <br/>embed, <br/>DMs button, <br/>User status (online, idle, dnd, invis) background (in dm list only, not selected dm), <br/> (if using view permissions plugin - those will have background changed too) 
 
-
+vvvvvvvvvvvvvvv to do vvvvvvvvvvvvvvv
 <h1 align="center">uikit Strings</h1>
 
 * uikit strings. They are in the Color Values screen if you dont know
